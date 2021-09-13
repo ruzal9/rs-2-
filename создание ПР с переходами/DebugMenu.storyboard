@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsO-Xj-R9L">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="101.5" y="433" width="211" height="30"/>
+                                <state key="normal" title="Открытдомащнюю страницу "/>
                                 <connections>
                                     <segue destination="fG7-KR-aUX" kind="show" id="p3o-7S-GMI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="AsO-Xj-R9L" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="oFp-o1-Gsh"/>
                             <constraint firstItem="AsO-Xj-R9L" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="x1T-aT-5hJ"/>
@@ -37,7 +37,7 @@
             </objects>
             <point key="canvasLocation" x="989.85507246376824" y="62.946428571428569"/>
         </scene>
-        <!--Item 2-->
+        <!--Собщения-->
         <scene sceneID="g2x-gA-Wos">
             <objects>
                 <viewController id="b3W-et-gEf" sceneMemberID="viewController">
@@ -45,15 +45,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Uf3-Vn-guf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Y2K-30-dFN"/>
+                    <tabBarItem key="tabBarItem" title="Собщения" image="message.fill" catalog="system" id="Y2K-30-dFN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9y-fW-HZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2582" y="336"/>
         </scene>
-        <!--Item 1-->
+        <!--Друзья-->
         <scene sceneID="bWD-m7-CzX">
             <objects>
                 <viewController id="VWS-va-5di" sceneMemberID="viewController">
@@ -61,9 +61,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="U6S-hu-w9Y"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="fhK-X5-ZR0"/>
+                    <tabBarItem key="tabBarItem" title="Друзья" image="person.2.fill" catalog="system" id="fhK-X5-ZR0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3w6-Hr-WHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,8 +108,16 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
