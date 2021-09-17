@@ -25,7 +25,7 @@ import UIKit
          let login = self.loginTextField.text
          let pass = self.passwordTextField.text
          if  login == "admin" && pass == "admin" {
-         self.showAdminScene ()
+         self.present ()
          }else {
          self.showAllert()
              }
@@ -49,8 +49,16 @@ import UIKit
          allertController.addAction(action)
          self.present(allertController,animated: true)
      }
+    
+  private func present () {
+   if let tabbar = UIStoryboard(name: "TabBar", bundle: nil).instantiateInitialViewController() {
+       self.present(tabbar, animated: true)
+      }
+   }
+    
 
-     @IBAction func pressButton(_ sender: Any) {
-         self.checkPassword()
+@IBAction func pressButton(_ sender: Any) {
+    self.checkPassword()
+    
      }
- }
+}
