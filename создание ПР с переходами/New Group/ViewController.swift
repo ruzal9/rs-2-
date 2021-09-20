@@ -24,20 +24,20 @@ import UIKit
      private func checkPassword() {
          let login = self.loginTextField.text
          let pass = self.passwordTextField.text
-         if  login == "admin" && pass == "admin" {
+         if  login == "" && pass == "" {
          self.present ()
          }else {
          self.showAllert()
              }
      }
-     private func showAdminScene () {
-         let storyBoard = UIStoryboard(name: "DebugMenu", bundle: nil)
-         let viewConroller = storyBoard.instantiateInitialViewController()
-         if let viewConroller = viewConroller as? DebugViewController {
-         self.present(viewConroller,animated: true)
+   //  private func showAdminScene () {
+     //    let storyBoard = UIStoryboard(name: "DebugMenu", bundle: nil)
+      //   let viewConroller = storyBoard.instantiateInitialViewController()
+       //  if let viewConroller = viewConroller as? DebugViewController {
+        // self.present(viewConroller,animated: true)
 
-         }
-     }
+       //  }
+   //  }
      private func showAllert() {
          let allertController = UIAlertController(
              title: "Ошибка",

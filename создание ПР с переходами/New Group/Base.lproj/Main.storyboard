@@ -55,6 +55,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstItem="6rw-hU-UMk" firstAttribute="centerX" secondItem="lKf-9T-t4q" secondAttribute="centerX" id="Lbx-xO-Jen"/>
                                     <constraint firstItem="dhx-GT-bbW" firstAttribute="centerX" secondItem="lKf-9T-t4q" secondAttribute="centerX" id="M9x-G6-HUT"/>
@@ -100,6 +101,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
